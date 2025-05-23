@@ -7,13 +7,17 @@ phases:
     commands:
       - echo Installing Node.js in the install phase
       - npm install # To install NPM
-build:
+
+  build:
+    commands:
       - echo Building the application...
       - npm run build
       - pwd    
+
   post_build:
     commands:
       - echo The build is complete
+
 artifacts:
   files:
     - 'build/**/*'
