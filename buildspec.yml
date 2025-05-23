@@ -10,8 +10,7 @@ phases:
 build:
       - echo Building the application...
       - npm run build
-      - pwd
-      
+      - pwd    
   post_build:
     commands:
       - echo The build is complete
